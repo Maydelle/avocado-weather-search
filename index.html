@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <title>Avocado Weather Search</title>
@@ -15,21 +13,30 @@
   <body>
     <div class="container">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
         </form>
+        <hr />
       </header>
       <main>
-        <div>
-          <h1>Brisbane</h1>
-          <p>
-            Thursday 17:59 | clear sky <br />
-            Humidity: 75% | Wind: 9.77km/h
-          </p>
+        <div class="weather-data">
+          <div>
+            <h1 class="weather-city">Brisbane</h1>
+            <p class="weather-details">
+              Thursday 17:59 | clear sky <br />
+              Humidity: 75% | Wind: 9.77km/h
+            </p>
+          </div>
+          <div class="weather-temp">☀️ 28°C</div>
         </div>
-        <div>☀️ 28°C</div>
       </main>
+      <hr />
       <footer>
         Coded by
         <a href="https://github.com/Maydelle" target="_blank">Maydelle Waugh</a>
