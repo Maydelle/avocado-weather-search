@@ -1,6 +1,6 @@
 body {
   background: #c2ffbb;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 main {
   margin-top: 30px;
@@ -10,7 +10,8 @@ main {
 footer {
   text-align: center;
   font-size: 14px;
-  color: #cef9e2;
+  font-weight: 500;
+  color: #64bd97;
   margin-top: 20px;
 }
 hr {
@@ -18,7 +19,7 @@ hr {
   opacity: 0.4;
 }
 a {
-  color: #c4bbf0;
+  color: #b693fe;
 }
 .container {
   background: #477d7f;
@@ -51,8 +52,20 @@ a {
 .weather-data {
   display: flex;
   justify-content: space-between;
+  color: #cef9e2;
+  font-weight: 500;
 }
 .weather-city {
   margin: 0;
-  font-weight: 900;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #cef9e2;
+}
+.weather-details {
+  font-size: 16px;
+  line-height: 28px;
+}
+.weather-details strong {
+  color: #ff9de2;
 }
