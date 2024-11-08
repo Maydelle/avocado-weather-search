@@ -30,7 +30,7 @@ a {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.35);
 }
 .search-form {
-  max-width: 550px;
+  max-width: 570px;
   margin: 0 auto 30px;
 }
 .search-form-input,
@@ -58,9 +58,8 @@ a {
 .weather-city {
   margin: 0;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 44px;
   line-height: 48px;
-  color: #cef9e2;
 }
 .weather-details {
   font-size: 16px;
@@ -68,4 +67,20 @@ a {
 }
 .weather-details strong {
   color: #ff9de2;
+}
+.weather-temp-container {
+  display: flex;
+}
+.weather-icon {
+  font-size: 50px;
+  margin-top: 10px;
+}
+.weather-value {
+  font-size: 72px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.weather-unit {
+  font-size: 28px;
+  margin-top: 10px;
 }
