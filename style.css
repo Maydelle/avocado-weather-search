@@ -1,3 +1,13 @@
-h1 {
-  color: blueviolet;
+body {
+  background: #c2ffbb;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background: #477d7f;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.35);
 }
