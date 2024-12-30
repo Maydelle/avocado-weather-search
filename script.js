@@ -4,6 +4,9 @@ function refreshWeather(response) {
   let weatherCityElement = document.querySelector("#weather-city");
   let descriptionElement = document.querySelector("#condition-description");
   let humidityElement = document.querySelector("#humidity");
+  let windSpeedElement = document.querySelector("#wind-speed");
+  let timeElement = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
 
   console.log(response.data);
 
@@ -11,6 +14,8 @@ function refreshWeather(response) {
   temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
+  windSpeedElement.innerHTML = response.data.wind.speed;
+  timeElement.innerHTML = date.getHours();
 }
 
 function searchCity(city) {
