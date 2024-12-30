@@ -8,14 +8,12 @@ function refreshWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
-  console.log(response.data);
-
   weatherCityElement.innerHTML = response.data.city;
+  timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
   windSpeedElement.innerHTML = response.data.wind.speed;
-  timeElement.innerHTML = formateDate(date);
 }
 
 function formatDate(date) {
@@ -25,12 +23,15 @@ function formatDate(date) {
     "Sunday",
     "Monday",
     "Tuesday",
-    "Wedbesday",
+    "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
   ];
   let day = days[date.getDay()];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
 
   return `${day}, ${hours}:${minutes}`;
 }
