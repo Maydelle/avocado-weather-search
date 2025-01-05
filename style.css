@@ -96,8 +96,10 @@ a {
   line-height: 28px;
 }
 .weather-forecast-icon {
-  font-size: 30px;
-  text-align: center;
+  width: 68px;
+  height: 68px;
+  display: block;
+  margin: 0 auto;
 }
 .weather-forecast-temps {
   text-align: center;
